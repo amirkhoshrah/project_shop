@@ -142,8 +142,8 @@ hr {
   color: #fff;
   background-color: #0080ff;
   float: left;
-  padding: 9px 11px;
-  margin: 11px 0;
+  padding: 9px 15px;
+  margin: 11px 5px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 3px;
@@ -151,6 +151,10 @@ hr {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+.login_link {
+  color: #fff;
+  text-align: center;
 }
 /* page intro */
 .page_intro {
@@ -638,17 +642,17 @@ p {
 .main_panel .header {
   width: 100%;
   height: 50px;
-  box-shadow: 0 2px 3px #ccc;
-  margin-top: 10px;
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 99991;
 }
 .panel_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  margin-top: 5px;
 }
 .username {
   display: flex;
@@ -710,9 +714,11 @@ p {
   background-color: #414141;
   height: 100%;
   width: 240px;
-  top: 60px;
+  top: 0;
   right: 0;
-  padding-top: 40px;
+  padding-top: 100px;
+  z-index: 9999;
+  overflow: auto;
 }
 .panel_sidebar_pic {
   background-color: #fff;
@@ -736,10 +742,9 @@ p {
 .panel_sidebar_menu {
   margin-top: 25px;
 }
-.panel_sidebar_menu ul {
-}
+
 .panel_sidebar_menu ul li {
-padding: 10px 25px  0;
+  padding: 10px 25px 0;
 }
 .panel_sidebar_menu ul li a {
   color: #fff;
@@ -751,6 +756,34 @@ padding: 10px 25px  0;
   background-size: cover !important;
   vertical-align: -5px;
   margin-left: 12px;
+}
+/* panel_sidebar-little */
+.panel_sidebar_little {
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #414141;
+  z-index: 9999;
+  display: none;
+  padding-top: 60px;
+  text-align: center;
+}
+.panel_sidebar_little_logo img {
+  width: 40px;
+}
+.panel_sidebar_little li {
+  text-align: center;
+  padding-top: 20px;
+  display: block;
+}
+.panel_sidebar_little i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover !important;
+  text-align: center;
 }
 /* media query */
 @media screen and (max-width: 1150px) {
@@ -926,6 +959,15 @@ padding: 10px 25px  0;
   .new_postes h2 {
     font-size: 23px;
   }
+  .panel_sidebar {
+    display: none;
+  }
+  .panel_sidebar_little {
+    display: block;
+  }
+  .panel_body {
+    padding-right: 60px;
+  }
 }
 @media screen and (max-width: 360px) {
   .container {
@@ -958,5 +1000,11 @@ padding: 10px 25px  0;
   .footer_social_item {
     width: 100%;
     float: none;
+  }
+  .panel_body_content {
+    padding: 10px;
+  }
+  .setting_input input[type="text"] {
+    width: 200px;
   }
 }
