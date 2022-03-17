@@ -66,6 +66,7 @@ hr {
 .color_green {
   color: #05ce69;
 }
+
 /* header */
 .header {
   width: 100%;
@@ -706,7 +707,7 @@ p {
 }
 .panel_sidebar {
   position: fixed;
-  background-color: #222;
+  background-color: #414141;
   height: 100%;
   width: 240px;
   top: 60px;
@@ -731,6 +732,24 @@ p {
 .panel_sidebar_pic img {
   width: 100px;
   height: 100px;
+}
+.panel_sidebar_menu {
+}
+.panel_sidebar_menu ul {
+}
+.panel_sidebar_menu ul li {
+ padding: 10px 30px 5px 10px;
+}
+.panel_sidebar_menu ul li a {
+  color: #fff;
+}
+.panel_sidebar_menu ul li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover !important;
+  vertical-align: -5px;
+  margin-left: 12px;
 }
 /* media query */
 @media screen and (max-width: 1150px) {
