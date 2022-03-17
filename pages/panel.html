@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل تنظیمات</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main_panel">
+      <header class="header">
+        <div class="container">
+          <div class="panel_header">
+            <p><a href="../index.html">شاپ امیر</a></p>
+            <div class="username">
+              <span>Amir khoshrah</span>
+              <img src="../assets/images/icons/user-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- panel side bar-->
+      <div class="panel_sidebar">
+        <div class="panel_sidebar_pic">
+          <img src="../assets/images/logo.svg" alt="logo">
+        </div>
+      </div>
+      <!-- panel body  -->
+      <div class="panel_body">
+        <div class="panel_body_content">
+          <h1 class="p_16">تنظیمات اصلی</h1>
+
+          <div class="setting_input">
+            <label for="site_title">عنوان سایت</label>
+            <input type="text" name="SiteTitle" id="site_title" />
+          </div>
+
+          <div class="setting_input">
+            <label for="first_color">انتخاب رنگ اصلی سایت</label>
+            <input type="color" name="FirstColor" id="first_color" />
+          </div>
+
+          <div class="setting_input">
+            <label for="sec_color">انتخاب رنگ مکمل سایت</label>
+            <input type="color" name="SecColor" id="sec_color" />
+          </div>
+
+          <div class="setting_input">
+            <label for="main_logo">انتخاب لوگوی سایت</label>
+            <input type="file" name="main_logo" id="MainLogo" />
+          </div>
+
+          <div class="setting_input">
+            <label for="intro_text">متن قسمت معرفی سایت</label>
+            <input type="text" name="intro_text" id="IntroText" />
+          </div>
+
+          <input type="submit" value="ذخیره" class="panel_submit" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
